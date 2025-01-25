@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 3rem 0;
+    color: hsl(233, 13%, 49%);
+    background-color: hsl(240, 78%, 98%);;
+    margin: 0 auto;
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-position: top right, bottom left;
+  
+    background-repeat: no-repeat, no-repeat;
+  }
+  
+  #heading {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  #plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: stretch;
+    width: 90%;
+    row-gap: 2rem;
+  }
+  
+  .option {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 1rem;
+  }
+  
+  .item {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .progrm {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: hsl(232, 13%, 33%) !important;
+  }
+  
+  .cost {
+    border-bottom: 2px solid hsl(234, 14%, 74%);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dollar {
+    font-size: 2.5rem;
+  }
+  
+  .prcie {
+    font-size: 4rem;
+  }
+  
+  .storage {
+    border-bottom: 2px solid hsl(234, 14%, 74%);
+  }
+  
+  .users {
+    border-bottom: 2px solid hsl(234, 14%, 74%);
+  }
+  
+  .sendupto {
+    border-bottom: 2px solid hsl(234, 14%, 74%);
+  }
+  
+  .learnmore {
+    border: 2px solid rgb(199, 198, 196);
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  
+    border-radius: 1rem;
+    color: white;
+  }
+  
+  .option:hover {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    box-shadow: 0 4px 8px rgb(107, 96, 96);
+    transform: scale(1.05);
+  }
+  
+  .option:hover .learnmore {
+    background: white;
+    color: hsl(237, 63%, 64%);
+  }
+  
+  .option:hover .cost {
+    color: white;
+  }
+  
+  @media (min-width: 1440px) {
+    #plan {
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 2rem;
+      padding: 1rem 2rem;
+  
+      width: 80%;
+    }
+  
+    #layout {
+      height: 100vh;
+    }
+  
+    .option {
+      flex: 1 1 33%;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 1439px) {
+  
+    .option {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    #plan {
+      width: 60%;
+    }
+  }
+  
+  /* toggle button */
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-switch input:checked + .slider {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+  
+  .toggle-switch input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  
+  /* toggle button */
+  

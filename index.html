@@ -3,33 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>Pricing component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div id="layout">
+      <div id="heading">Our Pricing</div>
+
+      <div id="paymentOption">Monthly
+        <label  class="toggle-switch">
+            <input id="toggle" type="checkbox" />
+            <span class="slider"></span>
+        </label>
+        Yearly
+      </div>
+
+      <div id="plan">
+        <div class="option basic">
+          <div class="progrm item">Basic</div>
+          <div class="cost item">
+            <span class="dollar">$</span><span class="prcie">19.99</span>
+          </div>
+          <div class="storage item">500GB Storge</div>
+          <div class="users item">2 User allowed</div>
+          <div class="sendupto item">Send upto 3 GB</div>
+          <div class="learnmore item">Learn More</div>
+        </div>
+
+        <div class="option profsnal">
+          <div class="progrm item">Professional</div>
+          <div class="cost item">
+            <span class="dollar">$</span><span class="prcie">29.99</span>
+          </div>
+          <div class="storage item">1 TB Storge</div>
+          <div class="users item">5 User allowed</div>
+          <div class="sendupto item">Send upto 10 GB</div>
+          <div class="learnmore item">Learn More</div>
+        </div>
+        <div class="option master">
+          <div class="progrm item">Master</div>
+          <div class="cost item">
+            <span class="dollar">$</span><span class="prcie">39.99</span>
+          </div>
+          <div class="storage item">2 TB Storge</div>
+          <div class="users item">10 User allowed</div>
+          <div class="sendupto item">Send upto 20 GB</div>
+          <div class="learnmore item">Learn More</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
