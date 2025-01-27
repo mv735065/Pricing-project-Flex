@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 #layout {
   display: flex;
@@ -132,8 +128,8 @@ body {
   }
   .item{
     padding: 1.5rem;
-
   }
+  
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
