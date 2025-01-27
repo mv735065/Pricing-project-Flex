@@ -9,13 +9,14 @@
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
-    padding: 3rem 0;
+    padding-top: 4rem;
     color: hsl(233, 13%, 49%);
     background-color: hsl(240, 78%, 98%);;
     margin: 0 auto;
     background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
     background-position: top right, bottom left;
     background-repeat: no-repeat, no-repeat;
+    height: 100vh;
   }
   
   #heading {
@@ -39,11 +40,14 @@
     font-weight: bold;
     background-color: white;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   .item {
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
   
   .program {
@@ -88,6 +92,7 @@
   
     border-radius: 1rem;
     color: white;
+    margin-top: 2rem;
   }
   
   .option:hover {
