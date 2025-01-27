@@ -1,5 +1,3 @@
-
-
 #layout {
   display: flex;
   flex-direction: column;
@@ -21,6 +19,11 @@ body {
   padding-top: 2rem;
 }
 
+
+#paymentOption >span{
+  padding: 0 1rem;
+}
+
 #plan {
   display: flex;
   flex-direction: column;
@@ -29,6 +32,8 @@ body {
   width: 90%;
   row-gap: 2rem;
 }
+
+
 
 .option {
   text-align: center;
@@ -126,10 +131,9 @@ body {
     /* height: 60vh; */
     padding: 0 auto;
   }
-  .item{
+  .item {
     padding: 1.5rem;
   }
-  
 }
 
 @media (min-width: 600px) and (max-width: 1439px) {
