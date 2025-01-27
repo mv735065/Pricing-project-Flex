@@ -12,7 +12,7 @@
     padding-top: 4rem;
     color: hsl(233, 13%, 49%);
     background-color: hsl(240, 78%, 98%);;
-    margin: 0 auto;
+
     background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
     background-position: top right, bottom left;
     background-repeat: no-repeat, no-repeat;
@@ -48,6 +48,7 @@
   .item {
     padding: 1rem;
     /* margin: 1rem; */
+    /* border: 1px solid red; */
   }
   
   .program {
@@ -120,6 +121,7 @@
   
       width: 80%;
     }
+
   
     #layout {
       height: 100vh;
@@ -127,6 +129,7 @@
   
     .option {
       flex: 1 1 33%;
+      height: 60vh;
     }
   }
   
