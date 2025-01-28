@@ -4,24 +4,22 @@
   align-items: center;
   row-gap: 2rem;
   color: hsl(233, 13%, 49%);
+  padding: 2rem 0;
+  width: 100vw;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("./images/bg-top.svg");
+  background-position: 200px -10px;
+  background-repeat: no-repeat;
 }
 
 body {
-  background-color: hsl(240, 78%, 98%);
-  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
-  background-position: top right, bottom left;
-  background-repeat: no-repeat, no-repeat;
+  font-family: "Montserrat", sans-serif;
 }
 
 #heading {
   font-weight: bold;
   font-size: 2rem;
   padding-top: 2rem;
-}
-
-
-#paymentOption >span{
-  padding: 0 1rem;
 }
 
 #plan {
@@ -33,13 +31,11 @@ body {
   row-gap: 2rem;
 }
 
-
-
 .option {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -48,24 +44,39 @@ body {
 }
 
 .item {
-  padding: 1rem ;
-  
+  padding: 1rem;
 }
 
 .program {
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
-  color: hsl(232, 13%, 33%) !important;
+  color: hsl(233, 13%, 49%);
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+ul {
+  border-top: 1px solid hsl(234, 14%, 74%);
+  border-collapse: collapse;
 }
 
 .cost {
-  border-bottom: 2px solid hsl(234, 14%, 74%);
-  color: black;
+  color: rgb(92, 91, 91);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#paymentOption {
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .dollar {
@@ -76,25 +87,13 @@ body {
   font-size: 4rem;
 }
 
-.storage {
-  border-bottom: 2px solid hsl(234, 14%, 74%);
-}
-
-.users {
-  border-bottom: 2px solid hsl(234, 14%, 74%);
-}
-
-.sendupto {
-  border-bottom: 2px solid hsl(234, 14%, 74%);
-}
-
 .learnmore {
   border: 2px solid rgb(199, 198, 196);
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 
   border-radius: 1rem;
   color: white;
-  margin-top: 2rem;
+  margin: 1rem;
 }
 
 .option:hover {
@@ -117,23 +116,29 @@ body {
   #plan {
     flex-direction: row;
     justify-content: center;
-    column-gap: 2rem;
-    padding: 1rem 2rem;
-
-    width: 80%;
+    column-gap: 1rem;
+    width: 85%;
+    row-gap: 0;
   }
 
   #layout {
+    background-color: hsl(240, 78%, 98%);
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-position: top right, bottom left;
+    background-repeat: no-repeat, no-repeat;
     height: 100vh;
+    row-gap: 3rem;
+    width: 100vw;
   }
 
   .option {
     flex: 1 1 33%;
-    /* height: 60vh; */
+    height: 60vh;
     padding: 0 auto;
+    justify-content: space-evenly;
   }
-  .item {
-    padding: 1.5rem;
+  li {
+    padding: 1.5rem 0;
   }
 }
 
@@ -155,6 +160,7 @@ body {
   display: inline-block;
   width: 50px;
   height: 24px;
+  margin: 0 1rem;
 }
 
 .toggle-switch input {
