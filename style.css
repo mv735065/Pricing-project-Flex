@@ -83,14 +83,13 @@ ul {
   font-size: 2.5rem;
 }
 
-.prcie {
+.price {
   font-size: 4rem;
 }
 
 .learnmore {
-  border: 2px solid rgb(199, 198, 196);
+  /* border: 2px solid rgb(199, 198, 196); */
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-
   border-radius: 1rem;
   color: white;
   margin: 1rem;
